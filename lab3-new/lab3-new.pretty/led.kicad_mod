@@ -1,4 +1,4 @@
-(module led (layer F.Cu) (tedit 5E5AEBAE)
+(module led (layer F.Cu) (tedit 5E5AF1D4)
   (fp_text reference REF** (at 0 5.08) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
