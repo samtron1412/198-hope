@@ -1,5 +1,5 @@
-EESchema Schematic File Version 5
-EELAYER 31 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -12,11 +12,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 Connection ~ 5900 3700
 Connection ~ 4800 3300
@@ -282,7 +277,7 @@ U 1 1 5E51B971
 P 4350 3300
 F 0 "F1" V 4153 3300 50  0000 C CNN
 F 1 "Fuse" V 4244 3300 50  0000 C CNN
-F 2 "Fuse:Fuse_0201_0603Metric" V 4280 3300 50  0001 C CNN
+F 2 "Fuse:Fuse_BelFuse_0ZRE0005FF_L8.3mm_W3.8mm" V 4280 3300 50  0001 C CNN
 F 3 "~" H 4350 3300 50  0001 C CNN
 	1    4350 3300
 	0    1    1    0   
