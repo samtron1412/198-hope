@@ -1,0 +1,17 @@
+Source:,C:\Users\shawn\Documents\ee198\198-hope\lab3-new\lab3.sch,,,,,,
+Date:,3/11/2020 22:00,,,,,,
+Tool:,Eeschema (5.1.5)-3,,,,,,
+Generator:,C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value_with_fp.py,,,,,,
+Component Count:,15,,,,,,
+Ref,Qnty,Value,Cmp name,Footprint,Description,DigiKey Part Number,Link
+"C1, C2, ",2,0.1,470pF,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,Unpolarized capacitor,1113PHCT-ND,https://www.digikey.com/product-detail/en/vishay-bc-components/A471K15X7RH5TAA/1113PHCT-ND/145976
+"D1, ",1,LED,LED,lab3-new:led,Light emitting diode,475-3760-1-ND,https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LP-T67F-P1R2-35-1-20-R18-Z/475-3760-1-ND/10055041
+"D2, ",1,D_Schottky,D_Schottky,lab3-new:diode2,Schottky diode,BAT54HT1GOSCT-ND,https://www.digikey.com/product-detail/en/on-semiconductor/BAT54HT1G/BAT54HT1GOSCT-ND/917809
+"F1, ",1,Fuse,Fuse,Fuse:Fuse_BelFuse_0ZRE0005FF_L8.3mm_W3.8mm,Fuse,478-2866-1-ND,https://www.digikey.com/products/en?keywords=478-2866-1-ND
+"J1, J3, ",2,Conn_01x01_Male,Conn_01x01_Male,lab3-new:connector1,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",,
+"J2, ",1,USB_A,USB_A,Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal,USB Type A connector,609-4946-1-ND,https://www.digikey.com/products/en?keywords=609-4946-1-ND
+"L1, L2",2,4.7uH,L,Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2,Inductor,120ZCT-ND,https://www.digikey.com/product-detail/en/yageo/FMP200JR-52-120R/120ZCT-ND/2058966
+"R1, ",1,120kohm,R,Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical,Resistor,CF14JT1K50CT-ND,https://www.digikey.com/product-detail/en/yageo/FMP200JR-52-120R/120ZCT-ND/2058966
+"R2, ",1,150kohm,R,Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical,Resistor,CF14JT1K50CT-ND,https://www.digikey.com/products/en?keywords=CF14JT1K50CT-ND
+"R3, R4, ",2,150kohm,R,Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical,Resistor,296-44397-6-ND,https://www.digikey.com/products/en?keywords=CF14JT1K50CT-ND
+"U1, ",1,Regulator,Regulator-lab3,lab3-new:regulator,,,https://www.digikey.com/products/en?keywords=296-44397-6-ND
