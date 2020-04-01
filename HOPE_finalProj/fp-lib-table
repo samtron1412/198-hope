@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name digikey-kicad-library)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library)(options "")(descr ""))
+)
