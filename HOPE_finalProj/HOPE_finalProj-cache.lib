@@ -1,29 +1,43 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Amplifier_Audio_LM386
+# Amplifier_Operational_NE5534
 #
-DEF Amplifier_Audio_LM386 U 0 5 Y Y 1 F N
-F0 "U" 50 300 50 H V L CNN
-F1 "Amplifier_Audio_LM386" 50 200 50 H V L CNN
-F2 "" 100 100 50 H I C CNN
-F3 "" 200 200 50 H I C CNN
+DEF Amplifier_Operational_NE5534 U 0 5 Y Y 1 F N
+F0 "U" 50 250 50 H V L CNN
+F1 "Amplifier_Operational_NE5534" 50 150 50 H V L CNN
+F2 "" 50 50 50 H I C CNN
+F3 "" 50 150 50 H I C CNN
+ALIAS SA5534 LM101 LM201 LM301 AD797 LT1012
 $FPLIST
- SOIC*3.9x4.9mm*P1.27mm*
  DIP*W7.62mm*
- MSSOP*P0.65mm*
- TSSOP*3x3mm*P0.5mm*
+ SOIC*3.9x4.9mm*P1.27mm*
+ TO?5*
 $ENDFPLIST
 DRAW
-P 4 0 1 10 200 0 -200 200 -200 -200 200 0 f
-X GAIN 1 0 -300 200 U 50 20 1 1 I
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X BAL 1 0 -300 200 U 50 20 1 1 I
 X - 2 -300 -100 100 R 50 50 1 1 I
 X + 3 -300 100 100 R 50 50 1 1 I
-X GND 4 -100 -300 150 U 50 50 1 1 W
-X ~ 5 300 0 100 L 50 50 1 1 O
-X V+ 6 -100 300 150 D 50 50 1 1 W
-X BYPASS 7 0 300 200 D 50 20 1 1 I
-X GAIN 8 100 -300 250 U 50 20 1 1 I
+X V- 4 -100 -300 150 U 50 50 1 1 W
+X COMP 5 100 -300 250 U 50 20 1 1 I
+X ~ 6 300 0 100 L 50 50 1 1 O
+X V+ 7 -100 300 150 D 50 50 1 1 W
+X C/B 8 0 300 200 D 50 20 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Device_Antenna
+#
+DEF Device_Antenna AE 0 40 N N 1 F N
+F0 "AE" -75 75 50 H V R CNN
+F1 "Device_Antenna" -75 0 50 H V R CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 10 0 100 0 -150 N
+P 3 0 1 10 50 100 0 -100 -50 100 N
+X A 1 0 -200 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -42,6 +56,27 @@ P 2 0 1 20 -80 -30 80 -30 N
 P 2 0 1 20 -80 30 80 30 N
 X ~ 1 0 150 110 D 50 50 1 1 P
 X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Crystal
+#
+DEF Device_Crystal Y 0 40 N N 1 F N
+F0 "Y" 0 150 50 H V C CNN
+F1 "Device_Crystal" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -75 0 N
+P 2 0 1 20 -75 -50 -75 50 N
+P 2 0 1 20 75 -50 75 50 N
+P 2 0 1 0 100 0 75 0 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -76,6 +111,104 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Speaker
+#
+DEF Device_Speaker LS 0 0 Y N 1 F N
+F0 "LS" 50 225 50 H V R CNN
+F1 "Device_Speaker" 50 150 50 H V R CNN
+F2 "" 0 -200 50 H I C CNN
+F3 "" -10 -50 50 H I C CNN
+DRAW
+S -100 50 40 -150 0 0 10 N
+P 4 0 0 10 40 50 140 150 140 -250 40 -150 N
+X 1 1 -200 0 100 R 50 50 1 1 I
+X 2 2 -200 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# HOPE_finalProj-rescue_Mixer-projLib
+#
+DEF HOPE_finalProj-rescue_Mixer-projLib M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "HOPE_finalProj-rescue_Mixer-projLib" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 -200 350 200 0 1 0 N
+X IN_A 1 -250 -300 100 U 50 50 1 1 P
+X IN_B 2 -100 -300 100 U 50 50 1 1 P
+X GND 3 50 -300 100 U 50 50 1 1 P
+X OUT_A 4 200 300 100 D 50 50 1 1 P
+X OUT_B 5 200 -300 100 U 50 50 1 1 P
+X OSC_B 6 50 300 100 D 50 50 1 1 P
+X OSC_E 7 -100 300 100 D 50 50 1 1 P
+X Vcc 8 -250 300 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push_DPDT
+#
+DEF Switch_SW_Push_DPDT SW 0 0 Y N 1 F N
+F0 "SW" 0 350 50 H V C CNN
+F1 "Switch_SW_Push_DPDT" 0 -400 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 -200 20 0 0 0 N
+C -80 200 20 0 0 0 N
+C 80 -300 20 0 0 0 N
+C 80 100 20 0 0 0 N
+C 80 -100 20 0 1 0 N
+C 80 300 20 0 1 0 N
+P 2 0 1 0 -60 -190 100 -120 N
+P 2 0 1 0 -60 210 100 280 N
+P 2 0 1 0 0 -90 0 -160 N
+P 2 0 1 0 0 -40 0 0 N
+P 2 0 1 0 0 50 0 90 N
+P 2 0 1 0 0 140 0 180 N
+P 2 0 1 0 0 310 0 240 N
+X A 1 200 300 100 L 50 50 1 1 P
+X B 2 -200 200 100 R 50 50 1 1 P
+X C 3 200 100 100 L 50 50 1 1 P
+X A 4 200 -100 100 L 50 50 1 1 P
+X B 5 -200 -200 100 R 50 50 1 1 P
+X C 6 200 -300 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Linear-Amplifiers-Audio_LM386N-3_NOPB
+#
+DEF dk_Linear-Amplifiers-Audio_LM386N-3_NOPB U 0 0 Y Y 1 F N
+F0 "U" -350 200 60 H V C CNN
+F1 "dk_Linear-Amplifiers-Audio_LM386N-3_NOPB" 100 -200 60 H V L CNN
+F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm386" 200 300 60 H I L CNN
+F4 "296-43959-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM386N-3/NOPB" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Linear - Amplifiers - Audio" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm386" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LM386N-3-NOPB/296-43959-5-ND/148191" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC AMP AUDIO PWR .7W MONO 8DIP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -150 -100 -100 -100 N
+P 2 0 1 0 -150 100 -100 100 N
+P 2 0 1 0 -125 -75 -125 -125 N
+P 2 0 1 0 100 100 100 50 N
+P 4 0 1 0 -200 200 -200 -200 200 0 -200 200 f
+X Gain 1 0 200 100 D 50 50 1 1 I
+X ~ 2 -300 100 100 R 50 50 1 1 I
+X ~ 3 -300 -100 100 R 50 50 1 1 I
+X GND 4 -200 -300 100 U 50 50 1 1 W
+X ~ 5 300 0 100 L 50 50 1 1 O
+X Vs 6 -200 300 100 D 50 50 1 1 W
+X BYPASS 7 0 -200 100 U 50 50 1 1 O
+X Gain 8 100 200 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

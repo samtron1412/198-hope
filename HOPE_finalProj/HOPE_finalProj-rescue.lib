@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Mixer-projLib
+#
+DEF Mixer-projLib M 0 40 Y Y 1 F N
+F0 "M" 0 0 50 H V C CNN
+F1 "Mixer-projLib" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 -200 350 200 0 1 0 N
+X IN_A 1 -250 -300 100 U 50 50 1 1 P
+X IN_B 2 -100 -300 100 U 50 50 1 1 P
+X GND 3 50 -300 100 U 50 50 1 1 P
+X OUT_A 4 200 300 100 D 50 50 1 1 P
+X OUT_B 5 200 -300 100 U 50 50 1 1 P
+X OSC_B 6 50 300 100 D 50 50 1 1 P
+X OSC_E 7 -100 300 100 D 50 50 1 1 P
+X Vcc 8 -250 300 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

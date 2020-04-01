@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name HOPE_finalProj-rescue)(type Legacy)(uri ${KIPRJMOD}/HOPE_finalProj-rescue.lib)(options "")(descr ""))
+)
