@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 5E8429BC
+P 3650 2450
+F 0 "U?" H 3994 2496 50  0000 L CNN
+F 1 "LM386" H 3994 2405 50  0000 L CNN
+F 2 "" H 3750 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 3850 2650 50  0001 C CNN
+	1    3650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Microphone MK?
+U 1 1 5E843D1A
+P 2600 2550
+F 0 "MK?" H 2730 2596 50  0000 L CNN
+F 1 "Microphone" H 2730 2505 50  0000 L CNN
+F 2 "" V 2600 2650 50  0001 C CNN
+F 3 "~" V 2600 2650 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E84546D
+P 1750 3650
+F 0 "R?" H 1820 3696 50  0000 L CNN
+F 1 "R" H 1820 3605 50  0000 L CNN
+F 2 "" V 1680 3650 50  0001 C CNN
+F 3 "~" H 1750 3650 50  0001 C CNN
+	1    1750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E84593E
+P 2200 3650
+F 0 "C?" H 2315 3696 50  0000 L CNN
+F 1 "C" H 2315 3605 50  0000 L CNN
+F 2 "" H 2238 3500 50  0001 C CNN
+F 3 "~" H 2200 3650 50  0001 C CNN
+	1    2200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E846799
+P 3000 2100
+F 0 "R?" H 3070 2146 50  0000 L CNN
+F 1 "R" H 3070 2055 50  0000 L CNN
+F 2 "" V 2930 2100 50  0001 C CNN
+F 3 "~" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2250 3000 2350
+Wire Wire Line
+	3000 2350 2600 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5E846A14
+P 1700 4650
+F 0 "#PWR?" H 1700 4400 50  0001 C CNN
+F 1 "GND" H 1705 4477 50  0000 C CNN
+F 2 "" H 1700 4650 50  0001 C CNN
+F 3 "" H 1700 4650 50  0001 C CNN
+	1    1700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E847111
+P 1700 4500
+F 0 "#FLG?" H 1700 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 4673 50  0000 C CNN
+F 2 "" H 1700 4500 50  0001 C CNN
+F 3 "~" H 1700 4500 50  0001 C CNN
+	1    1700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4500 1700 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5E8482BA
+P 2600 2900
+F 0 "#PWR?" H 2600 2650 50  0001 C CNN
+F 1 "GND" H 2605 2727 50  0000 C CNN
+F 2 "" H 2600 2900 50  0001 C CNN
+F 3 "" H 2600 2900 50  0001 C CNN
+	1    2600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2750 2600 2900
+$Comp
+L power:VCC #PWR?
+U 1 1 5E8486FB
+P 2100 4500
+F 0 "#PWR?" H 2100 4350 50  0001 C CNN
+F 1 "VCC" H 2117 4673 50  0000 C CNN
+F 2 "" H 2100 4500 50  0001 C CNN
+F 3 "" H 2100 4500 50  0001 C CNN
+	1    2100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8493F6
+P 2100 4650
+F 0 "#PWR?" H 2100 4400 50  0001 C CNN
+F 1 "GND" H 2105 4477 50  0000 C CNN
+F 2 "" H 2100 4650 50  0001 C CNN
+F 3 "" H 2100 4650 50  0001 C CNN
+	1    2100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4500 2100 4650
+$Comp
+L power:VCC #PWR?
+U 1 1 5E8496F5
+P 3000 1850
+F 0 "#PWR?" H 3000 1700 50  0001 C CNN
+F 1 "VCC" H 3017 2023 50  0000 C CNN
+F 2 "" H 3000 1850 50  0001 C CNN
+F 3 "" H 3000 1850 50  0001 C CNN
+	1    3000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1850 3000 1950
+Wire Wire Line
+	3000 2350 3350 2350
+Connection ~ 3000 2350
+$EndSCHEMATC
