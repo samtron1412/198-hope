@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name microbug-lib)(type Legacy)(uri ${KIPRJMOD}/microbug-lib.lib)(options "")(descr ""))
+  (lib (name microbug-rescue)(type Legacy)(uri ${KIPRJMOD}/microbug-rescue.lib)(options "")(descr ""))
+)
