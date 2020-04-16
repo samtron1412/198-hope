@@ -1003,7 +1003,6 @@ Text Label 9150 1700 1    50   ~ 0
 ANT
 Wire Wire Line
 	9150 1700 9150 2200
-Connection ~ 1300 5800
 Wire Wire Line
 	1400 7200 1400 7400
 Wire Wire Line
@@ -1019,20 +1018,30 @@ F 3 "~" H 1400 7000 50  0001 C CNN
 	1    1400 7000
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 1500 6750
 $Comp
-L Device:Battery_Cell BT1
-U 1 1 5E987843
+L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
+U 1 1 5EC97D59
 P 1300 6250
-F 0 "BT1" H 1418 6346 50  0000 L CNN
-F 1 "Battery_Cell" H 1418 6255 50  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" V 1300 6310 50  0001 C CNN
-F 3 "~" V 1300 6310 50  0001 C CNN
+F 0 "BAT1" V 1247 6398 60  0000 L CNN
+F 1 "BC9VPC" V 1353 6398 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 1500 6450 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1500 6550 60  0001 L CNN
+F 4 "BC9VPC-ND" H 1500 6650 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC9VPC" H 1500 6750 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1500 6850 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1500 6950 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1500 7050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 1500 7150 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER 9V PC PIN" H 1500 7250 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1500 7350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1500 7450 60  0001 L CNN "Status"
 	1    1300 6250
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1300 5800 1300 6050
+	1300 5800 1300 5950
+Connection ~ 1300 5800
 Wire Wire Line
-	1300 6350 1300 6800
-NoConn ~ 1500 6750
+	1300 6550 1300 6800
 $EndSCHEMATC
