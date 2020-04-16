@@ -16,26 +16,24 @@ $EndDescr
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5E847111
-P 950 7300
-F 0 "#FLG01" H 950 7375 50  0001 C CNN
-F 1 "PWR_FLAG" H 950 7473 50  0000 C CNN
-F 2 "" H 950 7300 50  0001 C CNN
-F 3 "~" H 950 7300 50  0001 C CNN
-	1    950  7300
-	1    0    0    -1  
+P 1050 5800
+F 0 "#FLG01" H 1050 5875 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 5973 50  0000 C CNN
+F 2 "" H 1050 5800 50  0001 C CNN
+F 3 "~" H 1050 5800 50  0001 C CNN
+	1    1050 5800
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	950  7300 950  7450
 $Comp
 L power:VCC #PWR01
 U 1 1 5E8486FB
-P 950 7450
-F 0 "#PWR01" H 950 7300 50  0001 C CNN
-F 1 "VCC" H 967 7623 50  0000 C CNN
-F 2 "" H 950 7450 50  0001 C CNN
-F 3 "" H 950 7450 50  0001 C CNN
-	1    950  7450
-	-1   0    0    1   
+P 1300 5450
+F 0 "#PWR01" H 1300 5300 50  0001 C CNN
+F 1 "VCC" H 1317 5623 50  0000 C CNN
+F 2 "" H 1300 5450 50  0001 C CNN
+F 3 "" H 1300 5450 50  0001 C CNN
+	1    1300 5450
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3250 3250 3000 3250
@@ -286,16 +284,14 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5E88EC51
-P 1400 7300
-F 0 "#FLG02" H 1400 7375 50  0001 C CNN
-F 1 "PWR_FLAG" H 1400 7473 50  0000 C CNN
-F 2 "" H 1400 7300 50  0001 C CNN
-F 3 "~" H 1400 7300 50  0001 C CNN
-	1    1400 7300
-	1    0    0    -1  
+P 1500 7400
+F 0 "#FLG02" H 1500 7475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 7573 50  0000 C CNN
+F 2 "" H 1500 7400 50  0001 C CNN
+F 3 "~" H 1500 7400 50  0001 C CNN
+	1    1500 7400
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1400 7300 1400 7450
 $Comp
 L Device:C C1
 U 1 1 5E8919C6
@@ -384,8 +380,6 @@ Wire Wire Line
 	2750 4000 2750 4350
 Wire Wire Line
 	2750 4350 3150 4350
-Wire Wire Line
-	2750 4350 2750 4700
 Wire Wire Line
 	2750 4700 3000 4700
 Connection ~ 2750 4350
@@ -666,21 +660,8 @@ Wire Wire Line
 Wire Wire Line
 	8550 2200 8550 1450
 Connection ~ 8550 1450
-$Comp
-L Device:Antenna AE1
-U 1 1 5E912A7E
-P 9150 1700
-F 0 "AE1" H 9230 1689 50  0000 L CNN
-F 1 "Antenna" H 9230 1598 50  0000 L CNN
-F 2 "HOPE_finalProj_lib:Antena" H 9150 1700 50  0001 C CNN
-F 3 "~" H 9150 1700 50  0001 C CNN
-	1    9150 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 2200 9150 2200
-Wire Wire Line
-	9150 2200 9150 1900
 Connection ~ 8550 2200
 $Comp
 L Amplifier_Operational:NE5534 U3
@@ -812,7 +793,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 4450 8150 4450
 Connection ~ 8050 4450
-Connection ~ 9000 4550
 NoConn ~ 8450 4350
 NoConn ~ 8550 4350
 $Comp
@@ -923,8 +903,6 @@ F 3 "~" H 9940 4500 50  0001 C CNN
 	1    9950 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 4550 9750 4550
 $Comp
 L power:GND #PWR018
 U 1 1 5E95F45A
@@ -972,5 +950,89 @@ Wire Wire Line
 	5700 3800 5700 4050
 NoConn ~ 4900 3900
 NoConn ~ 2700 3450
-NoConn ~ 4250 1450
+Wire Wire Line
+	1400 7400 1500 7400
+Connection ~ 1400 7400
+Wire Wire Line
+	1400 7400 1400 7450
+Wire Wire Line
+	1300 5450 1300 5800
+Wire Wire Line
+	1050 5800 1300 5800
+$Comp
+L Device:C C10
+U 1 1 5EA056A1
+P 9400 4550
+F 0 "C10" V 9148 4550 50  0000 C CNN
+F 1 "1u" V 9239 4550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9438 4400 50  0001 C CNN
+F 3 "~" H 9400 4550 50  0001 C CNN
+	1    9400 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 4550 9250 4550
+Connection ~ 9000 4550
+Wire Wire Line
+	9550 4550 9750 4550
+$Comp
+L Device:Antenna AE1
+U 1 1 5E912A7E
+P 2500 7000
+F 0 "AE1" H 2580 6989 50  0000 L CNN
+F 1 "Antenna" H 2580 6898 50  0000 L CNN
+F 2 "HOPE_finalProj_lib:Antena" H 2500 7000 50  0001 C CNN
+F 3 "~" H 2500 7000 50  0001 C CNN
+	1    2500 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4350 2750 4500
+Text Label 2500 7300 3    50   ~ 0
+ANT
+Wire Wire Line
+	2500 7200 2500 7300
+Text Label 2500 4500 2    50   ~ 0
+ANT
+Wire Wire Line
+	2500 4500 2750 4500
+Connection ~ 2750 4500
+Wire Wire Line
+	2750 4500 2750 4700
+Text Label 9150 1700 1    50   ~ 0
+ANT
+Wire Wire Line
+	9150 1700 9150 2200
+Connection ~ 1300 5800
+Wire Wire Line
+	1400 7200 1400 7400
+Wire Wire Line
+	1500 6750 1500 6800
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5EABFE16
+P 1400 7000
+F 0 "SW2" V 1446 6812 50  0000 R CNN
+F 1 "SW_SPDT" V 1355 6812 50  0000 R CNN
+F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 1400 7000 50  0001 C CNN
+F 3 "~" H 1400 7000 50  0001 C CNN
+	1    1400 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5E987843
+P 1300 6250
+F 0 "BT1" H 1418 6346 50  0000 L CNN
+F 1 "Battery_Cell" H 1418 6255 50  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" V 1300 6310 50  0001 C CNN
+F 3 "~" V 1300 6310 50  0001 C CNN
+	1    1300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5800 1300 6050
+Wire Wire Line
+	1300 6350 1300 6800
+NoConn ~ 1500 6750
 $EndSCHEMATC
