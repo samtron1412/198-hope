@@ -79,17 +79,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 4850 2300 4800
 $Comp
-L Amplifier_Operational:NE5534 U2
-U 1 1 5E8486A2
-P 3300 4800
-F 0 "U2" H 3644 4754 50  0000 L CNN
-F 1 "NE5534" H 3644 4845 50  0000 L CNN
-F 2 "digikey-footprints:DIP-8_W7.62mm" H 3350 4850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 3350 4950 50  0001 C CNN
-	1    3300 4800
-	1    0    0    1   
-$EndComp
-$Comp
 L power:VCC #PWR07
 U 1 1 5E845521
 P 2500 2700
@@ -331,25 +320,6 @@ Wire Wire Line
 	2300 4200 2300 4500
 Wire Wire Line
 	1900 4200 1900 4500
-Wire Wire Line
-	4100 3250 4100 3400
-Wire Wire Line
-	4100 3400 4500 3400
-$Comp
-L Device:C C8
-U 1 1 5E89A922
-P 3950 4000
-F 0 "C8" H 4065 4046 50  0000 L CNN
-F 1 "1u" H 4065 3955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3988 3850 50  0001 C CNN
-F 3 "~" H 3950 4000 50  0001 C CNN
-	1    3950 4000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4100 4000 4100 3800
-Wire Wire Line
-	4100 3800 4500 3800
 $Comp
 L Device:C C6
 U 1 1 5E89E23C
@@ -471,8 +441,6 @@ Wire Wire Line
 	2500 5750 2500 6050
 Wire Wire Line
 	3700 4800 3600 4800
-Wire Wire Line
-	3700 4000 3700 4350
 Connection ~ 3700 4000
 Wire Wire Line
 	3700 4000 3800 4000
@@ -528,7 +496,6 @@ F 3 "" H 5850 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 3800 5850 3950
-NoConn ~ 5550 3200
 $Comp
 L Device:R R8
 U 1 1 5E8CA93A
@@ -674,10 +641,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 8100 2350 50  0001 C CNN
 	1    8050 2200
 	1    0    0    1   
 $EndComp
-NoConn ~ 7950 1900
 NoConn ~ 8050 1900
 NoConn ~ 8150 1900
-NoConn ~ 7950 2500
 NoConn ~ 8050 2500
 NoConn ~ 2700 3050
 NoConn ~ 2800 3050
@@ -921,25 +886,12 @@ Wire Wire Line
 Wire Wire Line
 	6000 4450 8050 4450
 NoConn ~ 8450 4750
-NoConn ~ 3200 4500
 NoConn ~ 3300 4500
 NoConn ~ 3400 4500
-NoConn ~ 3200 5100
 NoConn ~ 3300 5100
 NoConn ~ 4900 3300
 Wire Wire Line
 	4900 3500 5300 3500
-$Comp
-L Switch:SW_Push_DPDT SW1
-U 1 1 5E8985AE
-P 4700 3600
-F 0 "SW1" H 4700 4085 50  0000 C CNN
-F 1 "SW_Push_DPDT" H 4700 3994 50  0000 C CNN
-F 2 "HOPE_finalProj_lib:DPDT_Switch" H 4700 3800 50  0001 C CNN
-F 3 "~" H 4700 3800 50  0001 C CNN
-	1    4700 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 3700 5150 3700
 Wire Wire Line
@@ -1043,5 +995,162 @@ Wire Wire Line
 	1300 5800 1300 5950
 Connection ~ 1300 5800
 Wire Wire Line
+<<<<<<< Updated upstream
 	1300 6550 1300 6800
+=======
+	1300 6350 1300 6800
+NoConn ~ 1500 6750
+Wire Wire Line
+	3700 4000 3700 4350
+$Comp
+L Device:C C8
+U 1 1 5E89A922
+P 3950 4000
+F 0 "C8" H 4065 4046 50  0000 L CNN
+F 1 "1u" H 4065 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3988 3850 50  0001 C CNN
+F 3 "~" H 3950 4000 50  0001 C CNN
+	1    3950 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 4000 4500 4000
+Wire Wire Line
+	4500 4000 4500 3900
+Wire Wire Line
+	4100 3250 4500 3250
+Wire Wire Line
+	4500 3250 4500 3300
+Wire Wire Line
+	4900 3500 4900 3400
+Wire Wire Line
+	4900 3700 4900 3800
+$Comp
+L Switch:SW_Push_DPDT SW1
+U 1 1 5E8985AE
+P 4700 3600
+F 0 "SW1" H 4700 4085 50  0000 C CNN
+F 1 "SW_Push_DPDT" H 4700 3994 50  0000 C CNN
+F 2 "HOPE_finalProj_lib:DPDT_Switch" H 4700 3800 50  0001 C CNN
+F 3 "~" H 4700 3800 50  0001 C CNN
+	1    4700 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EA2D7AC
+P 4100 3500
+F 0 "C?" V 3848 3500 50  0000 C CNN
+F 1 "C" V 3939 3500 50  0000 C CNN
+F 2 "" H 4138 3350 50  0001 C CNN
+F 3 "~" H 4100 3500 50  0001 C CNN
+	1    4100 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3500 4250 3500
+$Comp
+L power:VCC #PWR?
+U 1 1 5EA45C30
+P 5550 3200
+F 0 "#PWR?" H 5550 3050 50  0001 C CNN
+F 1 "VCC" H 5567 3373 50  0000 C CNN
+F 2 "" H 5550 3200 50  0001 C CNN
+F 3 "" H 5550 3200 50  0001 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EA46D1A
+P 4100 3700
+F 0 "C?" V 3848 3700 50  0000 C CNN
+F 1 "C" V 3939 3700 50  0000 C CNN
+F 2 "" H 4138 3550 50  0001 C CNN
+F 3 "~" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3700 4250 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5EA4D2B2
+P 3650 3600
+F 0 "#PWR?" H 3650 3350 50  0001 C CNN
+F 1 "GND" H 3655 3427 50  0000 C CNN
+F 2 "" H 3650 3600 50  0001 C CNN
+F 3 "" H 3650 3600 50  0001 C CNN
+	1    3650 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 3500 3650 3500
+Wire Wire Line
+	3650 3500 3650 3600
+Wire Wire Line
+	3950 3700 3650 3700
+Wire Wire Line
+	3650 3700 3650 3600
+Connection ~ 3650 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5EA66C97
+P 7950 1900
+F 0 "#PWR?" H 7950 1650 50  0001 C CNN
+F 1 "GND" H 7955 1727 50  0000 C CNN
+F 2 "" H 7950 1900 50  0001 C CNN
+F 3 "" H 7950 1900 50  0001 C CNN
+	1    7950 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EA67D4D
+P 7950 2500
+F 0 "#PWR?" H 7950 2350 50  0001 C CNN
+F 1 "VCC" H 7967 2673 50  0000 C CNN
+F 2 "" H 7950 2500 50  0001 C CNN
+F 3 "" H 7950 2500 50  0001 C CNN
+	1    7950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EA68987
+P 3200 5100
+F 0 "#PWR?" H 3200 4950 50  0001 C CNN
+F 1 "VCC" H 3217 5273 50  0000 C CNN
+F 2 "" H 3200 5100 50  0001 C CNN
+F 3 "" H 3200 5100 50  0001 C CNN
+	1    3200 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA75794
+P 3150 4450
+F 0 "#PWR?" H 3150 4200 50  0001 C CNN
+F 1 "GND" H 3155 4277 50  0000 C CNN
+F 2 "" H 3150 4450 50  0001 C CNN
+F 3 "" H 3150 4450 50  0001 C CNN
+	1    3150 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:NE5534 U2
+U 1 1 5E8486A2
+P 3300 4800
+F 0 "U2" H 3644 4754 50  0000 L CNN
+F 1 "NE5534" H 3644 4845 50  0000 L CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 3350 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 3350 4950 50  0001 C CNN
+	1    3300 4800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3150 4450 3200 4450
+Wire Wire Line
+	3200 4450 3200 4500
+>>>>>>> Stashed changes
 $EndSCHEMATC
