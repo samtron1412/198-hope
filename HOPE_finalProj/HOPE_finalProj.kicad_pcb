@@ -1,9 +1,9 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.5-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
     (drawings 4)
-    (tracks 376)
+    (tracks 378)
     (zones 0)
     (modules 43)
     (nets 40)
@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -85,7 +85,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
@@ -1891,6 +1891,8 @@
   (segment (start 140.716 114.527) (end 163.041 114.527) (width 0.25) (layer F.Cu) (net 3))
   (segment (start 163.75 115.236) (end 163.75 128.868) (width 0.25) (layer F.Cu) (net 3))
   (segment (start 163.041 114.527) (end 163.75 115.236) (width 0.25) (layer F.Cu) (net 3))
+  (segment (start 110.958 102.108) (end 109.982 103.084) (width 0.25) (layer F.Cu) (net 3))
+  (segment (start 114.808 102.108) (end 110.958 102.108) (width 0.25) (layer F.Cu) (net 3))
   (segment (start 111.76 75.184) (end 110.49 73.914) (width 0.25) (layer B.Cu) (net 4))
   (segment (start 133.566001 67.780001) (end 134.366 68.58) (width 0.25) (layer B.Cu) (net 4))
   (segment (start 128.237999 67.454999) (end 133.240999 67.454999) (width 0.25) (layer B.Cu) (net 4))
