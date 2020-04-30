@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name HOPE_finalProj_lib)(type KiCad)(uri ${KIPRJMOD}/HOPE_finalProj_lib.pretty)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
   (lib (name digikey-kicad-library)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library)(options "")(descr ""))
 )

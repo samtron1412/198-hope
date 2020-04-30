@@ -262,23 +262,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR03
 U 1 1 5E88DEC1
-P 1400 7450
-F 0 "#PWR03" H 1400 7200 50  0001 C CNN
-F 1 "GND" H 1405 7277 50  0000 C CNN
-F 2 "" H 1400 7450 50  0001 C CNN
-F 3 "" H 1400 7450 50  0001 C CNN
-	1    1400 7450
+P 1300 6950
+F 0 "#PWR03" H 1300 6700 50  0001 C CNN
+F 1 "GND" H 1305 6777 50  0000 C CNN
+F 2 "" H 1300 6950 50  0001 C CNN
+F 3 "" H 1300 6950 50  0001 C CNN
+	1    1300 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5E88EC51
-P 1500 7400
-F 0 "#FLG02" H 1500 7475 50  0001 C CNN
-F 1 "PWR_FLAG" H 1500 7573 50  0000 C CNN
-F 2 "" H 1500 7400 50  0001 C CNN
-F 3 "~" H 1500 7400 50  0001 C CNN
-	1    1500 7400
+P 1400 6900
+F 0 "#FLG02" H 1400 6975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1400 7073 50  0000 C CNN
+F 2 "" H 1400 6900 50  0001 C CNN
+F 3 "~" H 1400 6900 50  0001 C CNN
+	1    1400 6900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -882,10 +882,10 @@ Wire Wire Line
 	4900 3500 5300 3500
 NoConn ~ 2700 3450
 Wire Wire Line
-	1400 7400 1500 7400
-Connection ~ 1400 7400
+	1300 6900 1400 6900
+Connection ~ 1300 6900
 Wire Wire Line
-	1400 7400 1400 7450
+	1300 6900 1300 6950
 Wire Wire Line
 	1300 5450 1300 5800
 Wire Wire Line
@@ -935,42 +935,7 @@ ANT
 Wire Wire Line
 	9150 1700 9150 2200
 Wire Wire Line
-	1400 7200 1400 7400
-Wire Wire Line
-	1500 6750 1500 6800
-$Comp
-L Switch:SW_SPDT SW2
-U 1 1 5EABFE16
-P 1400 7000
-F 0 "SW2" V 1446 6812 50  0000 R CNN
-F 1 "SW_SPDT" V 1355 6812 50  0000 R CNN
-F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 1400 7000 50  0001 C CNN
-F 3 "~" H 1400 7000 50  0001 C CNN
-	1    1400 7000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
-U 1 1 5EC97D59
-P 1300 6250
-F 0 "BAT1" V 1247 6398 60  0000 L CNN
-F 1 "BC9VPC" V 1353 6398 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 1500 6450 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1500 6550 60  0001 L CNN
-F 4 "BC9VPC-ND" H 1500 6650 60  0001 L CNN "Digi-Key_PN"
-F 5 "BC9VPC" H 1500 6750 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 1500 6850 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 1500 6950 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1500 7050 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 1500 7150 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER 9V PC PIN" H 1500 7250 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 1500 7350 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1500 7450 60  0001 L CNN "Status"
-	1    1300 6250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1300 5800 1300 5950
+	1300 6700 1300 6900
 Connection ~ 1300 5800
 Wire Wire Line
 	3700 4000 3700 4350
@@ -992,8 +957,8 @@ L Device:C C15
 U 1 1 5EA2D7AC
 P 4400 2850
 F 0 "C15" V 4148 2850 50  0000 C CNN
-F 1 "C" V 4239 2850 50  0000 C CNN
-F 2 "" H 4438 2700 50  0001 C CNN
+F 1 "1u" V 4239 2850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4438 2700 50  0001 C CNN
 F 3 "~" H 4400 2850 50  0001 C CNN
 	1    4400 2850
 	-1   0    0    1   
@@ -1003,8 +968,8 @@ L Device:C C16
 U 1 1 5EA46D1A
 P 4150 4300
 F 0 "C16" V 3898 4300 50  0000 C CNN
-F 1 "C" V 3989 4300 50  0000 C CNN
-F 2 "" H 4188 4150 50  0001 C CNN
+F 1 "1u" V 3989 4300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4188 4150 50  0001 C CNN
 F 3 "~" H 4150 4300 50  0001 C CNN
 	1    4150 4300
 	0    -1   -1   0   
@@ -1095,19 +1060,6 @@ Wire Wire Line
 	4300 4000 4300 3700
 Wire Wire Line
 	4300 3700 4500 3700
-Wire Wire Line
-	1300 6550 1300 6800
-$Comp
-L power:GND #PWR?
-U 1 1 5EB74493
-P 1500 6750
-F 0 "#PWR?" H 1500 6500 50  0001 C CNN
-F 1 "GND" H 1505 6577 50  0000 C CNN
-F 2 "" H 1500 6750 50  0001 C CNN
-F 3 "" H 1500 6750 50  0001 C CNN
-	1    1500 6750
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:VCC #PWR0101
 U 1 1 5EA45C30
@@ -1120,10 +1072,10 @@ F 3 "" H 5550 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0108
 U 1 1 5EBCFB7A
 P 4550 4750
-F 0 "#PWR?" H 4550 4500 50  0001 C CNN
+F 0 "#PWR0108" H 4550 4500 50  0001 C CNN
 F 1 "GND" H 4555 4577 50  0000 C CNN
 F 2 "" H 4550 4750 50  0001 C CNN
 F 3 "" H 4550 4750 50  0001 C CNN
@@ -1131,10 +1083,10 @@ F 3 "" H 4550 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0109
 U 1 1 5EBD0151
 P 4300 4950
-F 0 "#PWR?" H 4300 4800 50  0001 C CNN
+F 0 "#PWR0109" H 4300 4800 50  0001 C CNN
 F 1 "VCC" H 4317 5123 50  0000 C CNN
 F 2 "" H 4300 4950 50  0001 C CNN
 F 3 "" H 4300 4950 50  0001 C CNN
@@ -1156,23 +1108,23 @@ transmitter_VCC
 Text GLabel 8250 4000 1    50   Input ~ 0
 speaker_VCC
 $Comp
-L Switch:SW_Push_DPDT SW?
+L Switch:SW_Push_DPDT SW1
 U 1 1 5EC38A20
 P 4700 3600
-F 0 "SW?" H 4700 4085 50  0000 C CNN
+F 0 "SW1" H 4700 4085 50  0000 C CNN
 F 1 "SW_Push_DPDT" H 4700 3994 50  0000 C CNN
-F 2 "" H 4700 3800 50  0001 C CNN
+F 2 "HOPE_finalProj_lib:DPDT_Switch" H 4700 3800 50  0001 C CNN
 F 3 "~" H 4700 3800 50  0001 C CNN
 	1    4700 3600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_DPDT SW?
+L Switch:SW_Push_DPDT SW3
 U 1 1 5EC818F0
 P 5050 5050
-F 0 "SW?" H 5050 5535 50  0000 C CNN
+F 0 "SW3" H 5050 5535 50  0000 C CNN
 F 1 "SW_Push_DPDT" H 5050 5444 50  0000 C CNN
-F 2 "" H 5050 5250 50  0001 C CNN
+F 2 "HOPE_finalProj_lib:DPDT_Switch" H 5050 5250 50  0001 C CNN
 F 3 "~" H 5050 5250 50  0001 C CNN
 	1    5050 5050
 	-1   0    0    -1  
@@ -1186,22 +1138,22 @@ Wire Wire Line
 Wire Wire Line
 	5700 3950 5700 3800
 $Comp
-L Device:C C?
+L Device:C C17
 U 1 1 5ECAE448
 P 4700 4750
-F 0 "C?" V 4448 4750 50  0000 C CNN
-F 1 "C" V 4539 4750 50  0000 C CNN
-F 2 "" H 4738 4600 50  0001 C CNN
+F 0 "C17" V 4448 4750 50  0000 C CNN
+F 1 "1u" V 4539 4750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4738 4600 50  0001 C CNN
 F 3 "~" H 4700 4750 50  0001 C CNN
 	1    4700 4750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5250 4850 5450 4850
+	5250 4850 5350 4850
 Text GLabel 5450 5250 2    50   Input ~ 0
 speaker_VCC
 Wire Wire Line
-	5250 5250 5450 5250
+	5250 5250 5350 5250
 Wire Wire Line
 	4300 4950 4500 4950
 Wire Wire Line
@@ -1212,10 +1164,10 @@ Connection ~ 4500 4950
 Wire Wire Line
 	4500 4950 4850 4950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 5ECDE049
 P 4550 5350
-F 0 "#PWR?" H 4550 5100 50  0001 C CNN
+F 0 "#PWR0110" H 4550 5100 50  0001 C CNN
 F 1 "GND" H 4555 5177 50  0000 C CNN
 F 2 "" H 4550 5350 50  0001 C CNN
 F 3 "" H 4550 5350 50  0001 C CNN
@@ -1223,14 +1175,68 @@ F 3 "" H 4550 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C18
 U 1 1 5ECDE646
 P 4700 5350
-F 0 "C?" V 4448 5350 50  0000 C CNN
-F 1 "C" V 4539 5350 50  0000 C CNN
-F 2 "" H 4738 5200 50  0001 C CNN
+F 0 "C18" V 4448 5350 50  0000 C CNN
+F 1 "1u" V 4539 5350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4738 5200 50  0001 C CNN
 F 3 "~" H 4700 5350 50  0001 C CNN
 	1    4700 5350
 	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5ECFE7E3
+P 5350 5500
+F 0 "#FLG0101" H 5350 5575 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 5673 50  0000 C CNN
+F 2 "" H 5350 5500 50  0001 C CNN
+F 3 "~" H 5350 5500 50  0001 C CNN
+	1    5350 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5ECFFBDA
+P 5350 4500
+F 0 "#FLG0102" H 5350 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 4673 50  0000 C CNN
+F 2 "" H 5350 4500 50  0001 C CNN
+F 3 "~" H 5350 4500 50  0001 C CNN
+	1    5350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4500 5350 4850
+Connection ~ 5350 4850
+Wire Wire Line
+	5350 4850 5450 4850
+Wire Wire Line
+	5350 5500 5350 5250
+Connection ~ 5350 5250
+Wire Wire Line
+	5350 5250 5450 5250
+Wire Wire Line
+	1300 5800 1300 6100
+$Comp
+L dk_Battery-Holders-Clips-Contacts:BC9VPC BAT1
+U 1 1 5EDC2C37
+P 1300 6400
+F 0 "BAT1" V 1247 6548 60  0000 L CNN
+F 1 "BC9VPC" V 1353 6548 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 1500 6600 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1500 6700 60  0001 L CNN
+F 4 "BC9VPC-ND" H 1500 6800 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC9VPC" H 1500 6900 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1500 7000 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1500 7100 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 1500 7200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 1500 7300 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER 9V PC PIN" H 1500 7400 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1500 7500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1500 7600 60  0001 L CNN "Status"
+	1    1300 6400
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
